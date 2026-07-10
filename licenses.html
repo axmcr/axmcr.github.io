@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title.licenses">axmcr Licenses</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body><canvas id="grid-canvas" aria-hidden="true"></canvas><canvas id="square-canvas" aria-hidden="true"></canvas>
+    <div id="page-loader" class="page-loader is-active" aria-hidden="true">
+      <div class="loader-inner">
+        <div class="loader-mark" aria-hidden="true"><img src="assets/stars/LOCKPICK.svg" alt="" data-loader-icon /></div>
+        <div class="loader-title">axmcr</div>
+        <div class="loader-page" data-i18n="loader.page.licenses">Licenses</div>
+        <div class="loader-pulse" data-i18n="loader.loading">Loading...</div>
+        <div class="loader-footer">
+          <div class="loader-divider" aria-hidden="true"></div>
+          <div class="loader-quote" data-loader-quote></div>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <nav class="nav"><a class="logo" href="index.html">axmcr</a>
+          <div class="nav-links"><a href="index.html" data-nav data-i18n="nav.home">Home</a><a href="notes.html" data-nav data-i18n="nav.notes">Notes</a><a href="gallery.html" data-nav data-i18n="nav.gallery">Gallery</a><a href="archive.html" data-nav data-i18n="nav.archive">Archive</a><a href="chess.html" data-nav data-i18n="nav.chess">Chess</a><a href="contact.html" data-nav data-i18n="nav.contact">Contact</a></div>
+          <div class="nav-meta">
+            <div class="clock-block"><span class="clock-label" data-i18n="nav.local">Local</span><span class="clock" data-clock>--:--:--</span></div>
+            <div class="lang-block"><span class="clock-label" data-i18n="nav.language">Language</span><select id="lang-select" class="lang-select" aria-label="Language">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+                <option value="ru">RU</option>
+                <option value="more" disabled data-i18n="nav.more">More soon</option>
+              </select></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <aside class="side-nav" aria-hidden="true">
+      <div class="side-shell">
+        <div class="side-brand">axmcr</div>
+        <nav class="side-links" aria-label="Docked"><a href="index.html" data-nav data-i18n="nav.home">Home</a><a href="notes.html" data-nav data-i18n="nav.notes">Notes</a><a href="gallery.html" data-nav data-i18n="nav.gallery">Gallery</a><a href="archive.html" data-nav data-i18n="nav.archive">Archive</a><a href="chess.html" data-nav data-i18n="nav.chess">Chess</a><a href="contact.html" data-nav data-i18n="nav.contact">Contact</a></nav>
+        <div class="side-meta"><span class="clock-label" data-i18n="nav.local">Local</span><span class="clock" data-clock>--:--:--</span></div>
+      </div>
+    </aside>
+    <main class="page">
+      <section class="container-wide page-header">
+        <div>
+          <h1 data-i18n="licenses.title">Licenses</h1>
+          <p class="page-lead" data-i18n="licenses.lead">Third-party licensing disclosures for axmcr.</p>
+        </div>
+        <div class="panel meta-panel">
+          <div class="meta-title" data-i18n="licenses.coverage.title">Coverage</div>
+          <ul class="meta-list">
+            <li data-i18n="licenses.coverage.item1">No external runtime libraries</li>
+            <li data-i18n="licenses.coverage.item2">All graphics produced in-house</li>
+            <li data-i18n="licenses.coverage.item3">Offline-first distribution</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <section class="section">
+            <h2 data-i18n="licenses.overview.title">Overview</h2>
+            <p data-i18n="licenses.overview.body">This page documents third-party licenses included with axmcr. The site ships as a static, offline-first build with custom HTML, CSS, and JavaScript authored by Alex Mercer.</p>
+          </section>
+          <section class="section">
+            <h2 data-i18n="licenses.libraries.title">Third-Party Libraries</h2>
+            <p data-i18n="licenses.libraries.body">No third-party libraries, frameworks, or external scripts are bundled with this site.</p>
+          </section>
+          <section class="section">
+            <h2 data-i18n="licenses.assets.title">Third-Party Assets</h2>
+            <p data-i18n="licenses.assets.body">All icons, chess assets, textures, and background visuals are original creations for this project. No licensed stock imagery is distributed with the build.</p>
+          </section>
+          <section class="section">
+            <h2 data-i18n="licenses.fonts.title">Fonts</h2>
+            <p data-i18n="licenses.fonts.body">Locally hosted fonts are used for typography. Their licenses are applied separately and are not reproduced here.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <div class="brand-cut" aria-hidden="true">
+      <div class="brand-cut-text">AXMCR</div>
+    </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div>axmcr</div>
+          <div data-i18n="footer.by">by Alex Mercer</div>
+          <div class="footer-meta" data-i18n="footer.copyright"> 2026 Alex Mercer. All rights reserved. No reuse without permission.</div>
+        </div>
+        <div class="footer-links"><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a><a href="terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a><a href="licenses.html" data-i18n="footer.licenses">Licenses</a></div>
+      </div>
+    </footer>
+    <script src="js/background.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

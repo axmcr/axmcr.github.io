@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title.chess">Chess!</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="chess-page"><canvas id="grid-canvas" aria-hidden="true"></canvas><canvas id="square-canvas" aria-hidden="true"></canvas>
+    <div id="page-loader" class="page-loader is-active" aria-hidden="true">
+      <div class="loader-inner">
+        <div class="loader-mark" aria-hidden="true"><img src="assets/stars/LOCKPICK.svg" alt="" data-loader-icon /></div>
+        <div class="loader-title">axmcr</div>
+        <div class="loader-page" data-i18n="loader.page.chess">Chess</div>
+        <div class="loader-pulse" data-i18n="loader.loading">Loading...</div>
+        <div class="loader-footer">
+          <div class="loader-divider" aria-hidden="true"></div>
+          <div class="loader-quote" data-loader-quote></div>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <nav class="nav"><a class="logo" href="index.html">axmcr</a>
+          <div class="nav-links"><a href="index.html" data-nav data-i18n="nav.home">Home</a><a href="notes.html" data-nav data-i18n="nav.notes">Notes</a><a href="gallery.html" data-nav data-i18n="nav.gallery">Gallery</a><a href="archive.html" data-nav data-i18n="nav.archive">Archive</a><a href="chess.html" data-nav data-i18n="nav.chess">Chess</a><a href="contact.html" data-nav data-i18n="nav.contact">Contact</a></div>
+          <div class="nav-meta">
+            <div class="clock-block"><span class="clock-label" data-i18n="nav.local">Local</span><span class="clock" data-clock>--:--:--</span></div>
+            <div class="lang-block"><span class="clock-label" data-i18n="nav.language">Language</span><select id="lang-select" class="lang-select" aria-label="Language">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+                <option value="ru">RU</option>
+                <option value="more" disabled data-i18n="nav.more">More soon!!</option>
+              </select></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <aside class="side-nav" aria-hidden="true">
+      <div class="side-shell">
+        <div class="side-brand">axmcr</div>
+        <nav class="side-links" aria-label="Docked"><a href="index.html" data-nav data-i18n="nav.home">Home</a><a href="notes.html" data-nav data-i18n="nav.notes">Notes</a><a href="gallery.html" data-nav data-i18n="nav.gallery">Gallery</a><a href="archive.html" data-nav data-i18n="nav.archive">Archive</a><a href="chess.html" data-nav data-i18n="nav.chess">Chess</a><a href="contact.html" data-nav data-i18n="nav.contact">Contact</a></nav>
+        <div class="side-meta"><span class="clock-label" data-i18n="nav.local">Local</span><span class="clock" data-clock>--:--:--</span></div>
+      </div>
+    </aside>
+    <main class="page">
+      <section class="container-wide page-header chess-header">
+        <div data-reveal>
+          <h1 data-i18n="chess.title">Chess</h1>
+          <p class="page-lead" data-i18n="chess.lead">Try and beat the hard chess computer if possible. It's not all that smart! </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container-wide">
+          <div class="chess-layout">
+            <div class="chess-sidebar">
+              <div class="panel tab-panel chess-settings">
+                <div class="meta-title" data-i18n="chess.setup.title">Match Setup</div>
+                <div class="settings-grid"><label class="settings-field"><span data-i18n="chess.setup.opponent">Opponent</span><select id="bot-toggle">
+                      <option value="off" data-i18n="chess.setup.hvh">Player vs Player</option>
+                      <option value="on" data-i18n="chess.setup.hvb">Player vs Bot</option>
+                    </select></label><label class="settings-field"><span data-i18n="chess.setup.play_as">Play As</span><select id="bot-side">
+                      <option value="w" data-i18n="chess.color.white">White</option>
+                      <option value="b" data-i18n="chess.color.black">Black</option>
+                    </select></label><label class="settings-field"><span data-i18n="chess.setup.difficulty">Difficulty</span><select id="bot-difficulty">
+                      <option value="easy" data-i18n="chess.level.easy">Easy</option>
+                      <option value="medium" data-i18n="chess.level.medium">Medium</option>
+                      <option value="hard" data-i18n="chess.level.hard">Hard</option>
+                    </select></label></div>
+                <div class="settings-actions"><button id="apply-settings" class="button" type="button" data-i18n="chess.setup.apply">Apply &amp; Restart</button></div>
+                <div id="bot-status" class="settings-note" data-i18n="chess.bot.off">Bot: Off</div>
+              </div>
+            </div>
+            <div class="board-wrap">
+              <div id="chess-board" class="board" role="grid" aria-label="Chess board"></div>
+              <div id="turn-indicator" class="turn-indicator"></div>
+            </div>
+            <div class="panel meta-panel chess-movelist tab-panel">
+              <div class="controls"><button id="undo-move" type="button" data-i18n="action.undo">Undo</button><button id="reset-game" type="button" data-i18n="action.reset">Reset</button><button id="toggle-theme" type="button" class="wide" data-i18n="chess.theme.dark">Theme: Dark</button></div>
+              <h2 data-i18n="chess.moves">Move History</h2>
+              <div id="move-list" class="move-list"></div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <div id="chess-overlay" class="chess-overlay" aria-hidden="true" role="dialog">
+      <div class="chess-overlay-panel">
+        <div id="chess-overlay-title" class="chess-overlay-title" data-i18n="chess.result.title">Game Over</div>
+        <div id="chess-overlay-message" class="chess-overlay-message"></div>
+        <div class="chess-overlay-actions"><button id="chess-overlay-reset" class="button" type="button" data-i18n="action.reset">Reset</button><button id="chess-overlay-close" class="button" type="button" data-i18n="action.close">Close</button></div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div>axmcr</div>
+          <div data-i18n="footer.by">by Alex Mercer</div>
+          <div class="footer-meta" data-i18n="footer.copyright">© 2026 Alex Mercer. All rights reserved. No reuse without permission.</div>
+        </div>
+        <div class="footer-links"><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a><a href="terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a><a href="licenses.html" data-i18n="footer.licenses">Licenses</a></div>
+      </div>
+    </footer>
+    <script src="js/background.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/chess.js" defer></script>
+  </body>
+</html>

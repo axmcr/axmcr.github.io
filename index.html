@@ -1,0 +1,202 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title.home">axmcr — Home</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body><canvas id="grid-canvas" aria-hidden="true"></canvas><canvas id="square-canvas" aria-hidden="true"></canvas>
+    <div id="page-loader" class="page-loader is-active" aria-hidden="true">
+      <div class="loader-inner">
+        <div class="loader-mark" aria-hidden="true"><img src="assets/stars/LOCKPICK.svg" alt="" data-loader-icon /></div>
+        <div class="loader-title">axmcr</div>
+        <div class="loader-page" data-i18n="loader.page.home">Home</div>
+        <div class="loader-pulse" data-i18n="loader.loading">Loading...</div>
+        <div class="loader-footer">
+          <div class="loader-divider" aria-hidden="true"></div>
+          <div class="loader-quote" data-loader-quote></div>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <nav class="nav"><a class="logo" href="index.html">axmcr</a>
+          <div class="nav-links"><a href="index.html" data-nav data-i18n="nav.home">Home</a><a href="notes.html" data-nav data-i18n="nav.notes">Notes</a><a href="gallery.html" data-nav data-i18n="nav.gallery">Gallery</a><a href="archive.html" data-nav data-i18n="nav.archive">Archive</a><a href="chess.html" data-nav data-i18n="nav.chess">Chess</a><a href="contact.html" data-nav data-i18n="nav.contact">Contact</a></div>
+          <div class="nav-meta">
+            <div class="clock-block"><span class="clock-label" data-i18n="nav.local">Local</span><span class="clock" data-clock>--:--:--</span></div>
+            <div class="lang-block"><span class="clock-label" data-i18n="nav.language">Language</span><select id="lang-select" class="lang-select" aria-label="Language">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+                <option value="ru">RU</option>
+                <option value="more" disabled data-i18n="nav.more">More soon</option>
+              </select></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <aside class="side-nav" aria-hidden="true">
+      <div class="side-shell">
+        <div class="side-brand">axmcr</div>
+        <nav class="side-links" aria-label="Docked"><a href="index.html" data-nav data-i18n="nav.home">Home</a><a href="notes.html" data-nav data-i18n="nav.notes">Notes</a><a href="gallery.html" data-nav data-i18n="nav.gallery">Gallery</a><a href="archive.html" data-nav data-i18n="nav.archive">Archive</a><a href="chess.html" data-nav data-i18n="nav.chess">Chess</a><a href="contact.html" data-nav data-i18n="nav.contact">Contact</a></nav>
+        <div class="side-meta"><span class="clock-label" data-i18n="nav.local">Local</span><span class="clock" data-clock>--:--:--</span></div>
+      </div>
+    </aside>
+    <main class="page">
+      <section class="hero container-wide" data-reveal>
+        <div class="hero-grid">
+          <div>
+            <h1>axmcr</h1>
+            <p class="page-lead" data-i18n="home.lead">A personal archive of notes, silly stuff, and archived tools quite helpful.</p>
+            <p class="muted" data-i18n="home.by">by someone with too much time on their hands</p>
+          </div>
+        </div>
+      </section>
+      <section class="section" data-reveal>
+        <div class="container-wide">
+          <h2 data-i18n="home.site_index">Site Index</h2>
+          <div class="index-grid"><a class="index-card" href="archive.html"><img src="assets/icons/archive.svg" alt="" aria-hidden="true" />
+              <div><strong data-i18n="nav.archive">Archive</strong>
+                <div class="muted" data-i18n="home.card.archive.desc">Zipped versions of the site.</div>
+              </div><span><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" />Open</span>
+            </a><a class="index-card" href="chess.html"><img src="assets/icons/chess.svg" alt="" aria-hidden="true" />
+              <div><strong data-i18n="nav.chess">Chess</strong>
+                <div class="muted" data-i18n="home.card.chess.desc">Playable board with notation.</div>
+              </div><span><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" />Open</span>
+            </a><a class="index-card" href="contact.html"><img src="assets/icons/contact.svg" alt="" aria-hidden="true" />
+              <div><strong data-i18n="nav.contact">Contact</strong>
+                <div class="muted" data-i18n="home.card.contact.desc">Primary links and profiles.</div>
+              </div><span><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" />Open</span>
+            </a><a class="index-card" href="gallery.html"><img src="assets/icons/gallery.svg" alt="" aria-hidden="true" />
+              <div><strong data-i18n="nav.gallery">Gallery</strong>
+                <div class="muted" data-i18n="home.card.gallery.desc">Visual studies and incessant geometry tests.</div>
+              </div><span><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" />Open</span>
+            </a><a class="index-card" href="lab.html"><img src="assets/icons/archive.svg" alt="" aria-hidden="true" />
+              <div><strong data-i18n="nav.lab">Lab</strong>
+                <div class="muted" data-i18n="home.card.lab.desc">Active systems and modules.</div>
+              </div><span><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" />Open</span>
+            </a><a class="index-card" href="notes.html"><img src="assets/icons/notes.svg" alt="" aria-hidden="true" />
+              <div><strong data-i18n="nav.notes">Notes</strong>
+                <div class="muted" data-i18n="home.card.notes.desc">Technical notes and experiments.</div>
+              </div><span><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" />Open</span>
+            </a></div>
+        </div>
+      </section>
+      <section class="section" data-reveal>
+        <div class="container-wide split-divider" data-reveal>
+          <div>
+            <h2 data-i18n="home.gallery_preview">Gallery Preview</h2>
+            <div class="gallery-grid"><a class="gallery-item" href="gallery.html"><img src="assets/gallery/study-01.svg" alt="Study 01" /></a><a class="gallery-item" href="gallery.html"><img src="assets/gallery/study-02.svg" alt="Study 02" /></a></div><a class="link-card" href="gallery.html">
+              <div class="link-card-main"><strong data-i18n="home.view_full_gallery">View Full Gallery</strong>
+                <div class="muted" data-i18n="home.gallery_count">Two featured studies.</div>
+              </div>
+              <div class="link-card-action"><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" /><span data-i18n="action.open">Open</span></div>
+            </a>
+          </div>
+          <div class="split-separator" aria-hidden="true"><span class="split-line"></span><span class="split-mark">|</span><span class="split-line"></span></div>
+          <div>
+            <h2 data-i18n="home.archive_preview">Archive Preview</h2>
+            <div id="archive-preview" class="notes-grid"></div><a class="link-card" href="archive.html">
+              <div class="link-card-main"><strong data-i18n="home.open_archive">Open Archive</strong>
+                <div class="muted" data-i18n="home.archive_desc">Versioned exports of the site.</div>
+              </div>
+              <div class="link-card-action"><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" /><span data-i18n="action.open">Open</span></div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section" data-reveal>
+        <div class="container-wide">
+          <div class="giant-text" data-blur-text data-i18n="home.quote"> Neil deGrasse Tyson remarked, &ldquo;The Universe is under no obligation to make sense to you.&rdquo; and I think it sounds neat.</div>
+        </div>
+      </section>
+      <section class="section" data-reveal>
+        <div class="container-wide">
+          <h2 data-i18n="home.recent_notes">Recent Notes \\</h2>
+          <div class="note-title-list"><span class="muted">Coming soon.</span></div><a class="link-card" href="notes.html">
+            <div class="link-card-main"><strong data-i18n="home.open_notes">Open Notes</strong>
+              <div class="muted" data-i18n="home.notes_desc">Mind blown. Perchance.</div>
+            </div>
+            <div class="link-card-action"><img src="assets/icons/arrow.svg" alt="" aria-hidden="true" /><span data-i18n="action.open">Open</span></div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script id="notes-fallback" type="application/json">
+      [{
+        "title": "CSS Grid Notes",
+        "date": "2026-03-13",
+        "content": "Kept the grid at one width and let the layout breathe. Dropping columns feels better than squeezing text."
+      }, {
+        "title": "Canvas Geometry Study",
+        "date": "2026-03-12",
+        "content": "The grid looks best when motion is slow and contrast is low. I keep it behind the content."
+      }, {
+        "title": "Loader Timing",
+        "date": "2026-03-11",
+        "content": "The loader holds long enough to feel deliberate. If the page is fast, it still stays for a beat."
+      }, {
+        "title": "Move Log",
+        "date": "2026-03-10",
+        "content": "Notation reads better with consistent spacing. I keep the list quiet and aligned."
+      }, {
+        "title": "Archive Manifest",
+        "date": "2026-03-09",
+        "content": "Version and file size are enough in the archive. The rest can live in notes."
+      }, {
+        "title": "Spacing Pass",
+        "date": "2026-03-08",
+        "content": "I pushed the margins wider so sections feel separate. The page reads calmer."
+      }, {
+        "title": "Theme Toggle",
+        "date": "2026-03-07",
+        "content": "A light board option helps on long sessions. Dark stays the default."
+      }, {
+        "title": "Notes Index",
+        "date": "2026-03-06",
+        "content": "Titles only on the homepage keep it quick. Full entries stay in the Notes page."
+      }, {
+        "title": "Gallery Pass",
+        "date": "2026-03-05",
+        "content": "SVG studies are small and load instantly offline. I add more when a pattern feels useful."
+      }, {
+        "title": "Lab Demos",
+        "date": "2026-03-04",
+        "content": "The lab is for showing systems, not selling them. Previews open only when asked."
+      }, {
+        "title": "Navigation Dock",
+        "date": "2026-03-03",
+        "content": "The docked nav appears only when it matters. The top bar stays quiet at rest."
+      }, {
+        "title": "Footer Cut",
+        "date": "2026-03-02",
+        "content": "The AXMCR mark stays half-hidden above the footer. It reads like a signature."
+      }]
+    </script>
+    <script id="archive-fallback" type="application/json">
+      [{
+        "version": "1.0",
+        "file": "site-archive/v1.0.zip",
+        "size": 967560
+      }]
+    </script>
+    <div class="brand-cut" aria-hidden="true">
+      <div class="brand-cut-text">AXMCR</div>
+    </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div>axmcr</div>
+          <div data-i18n="footer.by">by Alex Mercer</div>
+          <div class="footer-meta" data-i18n="footer.copyright">© 2026 Alex Mercer. All rights reserved. No reuse without permission.</div>
+        </div>
+        <div class="footer-links"><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a><a href="terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a><a href="licenses.html" data-i18n="footer.licenses">Licenses</a></div>
+      </div>
+    </footer>
+    <script src="js/background.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/notes.js" defer></script>
+  </body>
+</html>

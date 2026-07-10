@@ -1,0 +1,62 @@
+[
+  {
+    "title": "CSS Grid Notes",
+    "date": "2026-03-13",
+    "content": "Kept the grid at one width and let the layout breathe. Dropping columns feels better than squeezing text."
+  },
+  {
+    "title": "Canvas Geometry Study",
+    "date": "2026-03-12",
+    "content": "The grid looks best when motion is slow and contrast is low. I keep it behind the content."
+  },
+  {
+    "title": "Loader Timing",
+    "date": "2026-03-11",
+    "content": "The loader holds long enough to feel deliberate. If the page is fast, it still stays for a beat."
+  },
+  {
+    "title": "Move Log",
+    "date": "2026-03-10",
+    "content": "Notation reads better with consistent spacing. I keep the list quiet and aligned."
+  },
+  {
+    "title": "Archive Manifest",
+    "date": "2026-03-09",
+    "content": "Version and file size are enough in the archive. The rest can live in notes."
+  },
+  {
+    "title": "Spacing Pass",
+    "date": "2026-03-08",
+    "content": "I pushed the margins wider so sections feel separate. The page reads calmer."
+  },
+  {
+    "title": "Theme Toggle",
+    "date": "2026-03-07",
+    "content": "A light board option helps on long sessions. Dark stays the default."
+  },
+  {
+    "title": "Notes Index",
+    "date": "2026-03-06",
+    "content": "Titles only on the homepage keep it quick. Full entries stay in the Notes page."
+  },
+  {
+    "title": "Gallery Pass",
+    "date": "2026-03-05",
+    "content": "SVG studies are small and load instantly offline. I add more when a pattern feels useful."
+  },
+  {
+    "title": "Lab Demos",
+    "date": "2026-03-04",
+    "content": "The lab is for showing systems, not selling them. Previews open only when asked."
+  },
+  {
+    "title": "Navigation Dock",
+    "date": "2026-03-03",
+    "content": "The docked nav appears only when it matters. The top bar stays quiet at rest."
+  },
+  {
+    "title": "Footer Cut",
+    "date": "2026-03-02",
+    "content": "The AXMCR mark stays half-hidden above the footer. It reads like a signature."
+  }
+]

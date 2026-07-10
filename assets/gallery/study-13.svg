@@ -1,0 +1,11 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='640' height='420' viewBox='0 0 640 420'>
+  <rect width='640' height='420' fill='rgb(10,10,10)' />
+  <rect x='36' y='36' width='568' height='348' fill='none' stroke='rgb(40,40,40)' stroke-width='2' />
+  <text x='50' y='76' font-family='Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial' font-size='22' fill='rgb(220,220,220)'>Greed Enumeration</text>
+  <text x='50' y='108' font-family='JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono' font-size='14' fill='rgb(160,160,160)'>Study 13</text>
+  <rect x='140' y='130' width='360' height='160' fill='none' stroke='rgb(120,120,120)' stroke-width='2' opacity='0.6' />
+  <line x1='200' y1='130' x2='200' y2='290' stroke='rgb(200,200,200)' stroke-width='1' opacity='0.3' />
+  <line x1='280' y1='130' x2='280' y2='290' stroke='rgb(200,200,200)' stroke-width='1' opacity='0.3' />
+  <line x1='360' y1='130' x2='360' y2='290' stroke='rgb(200,200,200)' stroke-width='1' opacity='0.3' />
+  <line x1='440' y1='130' x2='440' y2='290' stroke='rgb(200,200,200)' stroke-width='1' opacity='0.3' />
+</svg>

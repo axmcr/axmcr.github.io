@@ -1,0 +1,9 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='640' height='420' viewBox='0 0 640 420'>
+  <rect width='640' height='420' fill='rgb(14,14,14)' />
+  <rect x='36' y='36' width='568' height='348' fill='none' stroke='rgb(40,40,40)' stroke-width='2' />
+  <line x1='36' y1='36' x2='604' y2='384' stroke='rgb(209,209,209)' stroke-width='1.5' opacity='0.35' />
+  <line x1='604' y1='36' x2='36' y2='384' stroke='rgb(209,209,209)' stroke-width='1.5' opacity='0.35' />
+  <circle cx='320' cy='210' r='96' fill='none' stroke='rgb(120,120,120)' stroke-width='2' opacity='0.8' />
+  <text x='50' y='76' font-family='Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial' font-size='22' fill='rgb(220,220,220)'>Greed Enumeration</text>
+  <text x='50' y='108' font-family='JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono' font-size='14' fill='rgb(160,160,160)'>Study 03</text>
+</svg>
